@@ -1,0 +1,314 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_feeToSetter",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token0",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token1",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "pair",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "PairCreated",
+				"type": "event"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "INIT_CODE_PAIR_HASH",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "allPairs",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "allPairsLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					}
+				],
+				"name": "createPair",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "pair",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "feeTo",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "feeToSetter",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "getPair",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_feeTo",
+						"type": "address"
+					}
+				],
+				"name": "setFeeTo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_feeToSetter",
+						"type": "address"
+					}
+				],
+				"name": "setFeeToSetter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Rabbitswap/RabbitSwap-Contract/core/RabbitswapFactory.sol": "RabbitswapFactory"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Rabbitswap/RabbitSwap-Contract/core/RabbitswapERC20.sol": {
+			"keccak256": "0x01af52ee97613f49972d1318df7011ab4f6d0ef31de7cfc9caaddd78e446c0de",
+			"urls": [
+				"bzz-raw://936441a464fafd25edfed4271d8f490726e940ed0db756b70dcc9a1a042e66cc",
+				"dweb:/ipfs/QmVRr3vvZS5a1UG93WaSyUtmkSenoNdKjSCMpgFV3mQj7U"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/RabbitswapFactory.sol": {
+			"keccak256": "0x9adbaebf35e9caa5357ed2df4ccac39ca1aec10ad8a58ed6f813a1f63d4143b6",
+			"urls": [
+				"bzz-raw://f265ed2487e38448f650bc8c1b8f7b9073c58071b89c33f10486bfb411615363",
+				"dweb:/ipfs/QmSzduybFEAm6QyUuKhbu5UpsdYAJrAnxB5qarHzA2wF7j"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/RabbitswapPair.sol": {
+			"keccak256": "0xbc530d42b5e4c21b4e06fe0f793d2ec1b1ab997b8b6e3c90e82b2b15bbdec033",
+			"urls": [
+				"bzz-raw://c6422959311dd665490352466c4e53dbaca6a73238f6d874f8d6ac942b2e0278",
+				"dweb:/ipfs/QmWAYGUU8n1m6gpKJNjgSwGPcNEhxBemP7HoweZDHPRnct"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/interfaces/IERC20.sol": {
+			"keccak256": "0x61db17aebc5d812c7002d15c1da954065e56abe49d64b14c034abe5604d70eb3",
+			"urls": [
+				"bzz-raw://b006685e753f9120469f10b09c159f222d4cb8b507a6c1f0c14ed50c883ebe66",
+				"dweb:/ipfs/QmSyY7iTugbczPwfGK67etiyPULenYGzzRYbt8aabwwkUb"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/interfaces/IRabbitswapCallee.sol": {
+			"keccak256": "0x78af10f25bfea8b86d2433cffd5e667ad9f7f2b5e888da0d2c7a1fa060cf15b2",
+			"urls": [
+				"bzz-raw://497244924987dc084a89cb4706630c069b296b54b4d4198e9dbb8e23be21862d",
+				"dweb:/ipfs/QmcEUgvsAtyAiw2sAeXJjJZNJCpYodMHdBFXY1aL4xbtNp"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/interfaces/IRabbitswapERC20.sol": {
+			"keccak256": "0x1303ddb11d8374b35fb8953f0340fae9d0c95019327f403dea21decfb22612d3",
+			"urls": [
+				"bzz-raw://9bf23f88ee629b66e167ace7f8033ba14945d97789198289aeccb2f7a2cc2f35",
+				"dweb:/ipfs/QmNa76eMwhE7WLsg2R4JER6qranFX7NtCtxnA8fLgmUQT7"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/interfaces/IRabbitswapFactory.sol": {
+			"keccak256": "0x41ddc648fe027940782fd9a3a90d984b806e8981deb2f2a1923dd718039eba5e",
+			"urls": [
+				"bzz-raw://ad3049caa6f1318e00729e86722f3fd07503ab85e3331f4de657edc4b45e2be8",
+				"dweb:/ipfs/QmbU9uHtfUvnocHdH79bW6CyoZ4gGiABeYh2XodhAqcyKn"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/interfaces/IRabbitswapPair.sol": {
+			"keccak256": "0x7797e39d260ec1b8e464a7c76eb69e534d3288dff2d53c6d810faa304e72c9ca",
+			"urls": [
+				"bzz-raw://70671f2f3d560f97e5b868c36e60adbc80239aac7364093ee8bcaf977803a1db",
+				"dweb:/ipfs/QmeS91Qgvb76WVM3sYz1Nx9x9M2p2s45auiSt9TrnP8mUD"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/libraries/Math.sol": {
+			"keccak256": "0x05927cb4aa14897bd567607522c18d2d518fa803ade6f870fac244c6f3702a3b",
+			"urls": [
+				"bzz-raw://b2805464c2d75cbdd726d6bd5c9b8d1f2c8566b606ec769ffa9a194a42248862",
+				"dweb:/ipfs/QmWBa9BsCH8gbncvDFXmfMJX1USTHvAREtc8C7nz6miQpw"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/libraries/SafeMath.sol": {
+			"keccak256": "0x9c8465de751317860b623cd77f7f53f41a84b6624c0580ee526dcf7a2b7cb80c",
+			"urls": [
+				"bzz-raw://9b371b3eb0649b486f76cd628cc060354d1ac11fa8baed1170567271655f05d7",
+				"dweb:/ipfs/QmTUg31wK9UyX6o1Q1mxE4DQhuc1rWGBanNTu1uagNVQB6"
+			]
+		},
+		"Rabbitswap/RabbitSwap-Contract/core/libraries/UQ112x112.sol": {
+			"keccak256": "0x2240694530251ab376ae468d0a2d3ee8b3109e56f2acadbc203cdf341506dd31",
+			"urls": [
+				"bzz-raw://56f55c411faa2924df0915ff77129b9d8c64d3e4d28554e7234f3774ac95958a",
+				"dweb:/ipfs/QmYrzUurXL8ijzS8EnLtQTVD7fKPReosg2DsEPXXCY7ec3"
+			]
+		}
+	},
+	"version": 1
+}
